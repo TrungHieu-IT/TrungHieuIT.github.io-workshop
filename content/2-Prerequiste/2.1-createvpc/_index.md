@@ -11,7 +11,7 @@ pre : " <b> 2.4 </b> "
   + Click **Your VPC**.
   + Click **Create VPC**.
 
-![VPC](Workshop/static/images/1.intro/chooseVPC.png)
+![VPC](/Workshop/static/images/1.intro/chooseVPC.png)
 
 2. Tại trang **Create VPC**.
   + Tại mục **Name tag** điền **VPC-workshop**.
