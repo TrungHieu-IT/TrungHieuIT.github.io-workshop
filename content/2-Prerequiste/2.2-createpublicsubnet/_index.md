@@ -10,7 +10,7 @@ pre : " <b> 2.2 </b> "
 1. Click **Subnets**.
   + Click **Create subnet**.
 
-![VPC](/images/1.intro/CreateSubnet.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/CreateSubnet.png)
 
 1. Tại trang **Create subnet**.
   + Tại mục **VPC ID** click chọn **VPC-workshop**.
@@ -18,7 +18,7 @@ pre : " <b> 2.2 </b> "
   + Tại mục **Availability Zone** chọn Availability zone đầu tiên.
   + Tại mục **IPv4 CIRD block** điền **10.0.3.0/24**.
 
-![VPC](/images/1.intro/CreateSubnetScreen.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/CreateSubnetScreen.png)
 
 3. Kéo xuống cuối trang , click **Create subnet**.
 
@@ -26,32 +26,32 @@ pre : " <b> 2.2 </b> "
   + Click **Actions**.
   + Click **Edit subnet settings**.
 
-![VPC](/images/1.intro/EditSubnet.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/EditSubnet.png)
 
 5. Click chọn **Enable auto-assign public IPv4 address**.
   + Click **Save**.
 
-![VPC](/images/1.intro/SaveSettingSubnet.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/SaveSettingSubnet.png)
 
 Làm tương tự cho **Public subnet** thứ 2, nhưng tại **IPv4 CIRD block** điền **10.0.4.0/24**
 
-![VPC](/images/1.intro/CreateSubnet2.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/CreateSubnet2.png)
 
 1. Click **Internet Gateways**.
   + Click **Create internet gateway**.
   
-![VPC](/images/1.intro/IGW.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/IGW.png)
 
 7. Tại trang **Create internet gateway**.
   + Tại mục **Name tag** điền **Workshop IGW**.
   + Click **Create internet gateway**.
   
-![VPC](/images/1.intro/CreateIGW.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/CreateIGW.png)
 
 8. Sau khi tạo thành công, click **Actions**.
   + Click **Attach to VPC**.
  
-![VPC](/images/1.intro/AttachToVPC.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/AttachToVPC.png)
 
 9. Tại trang **Attach to VPC**.
   + Tại mục **Available VPCs** chọn **VPC-workshop**.
@@ -62,7 +62,7 @@ Làm tương tự cho **Public subnet** thứ 2, nhưng tại **IPv4 CIRD block*
   + Click **Route Tables**.
   + Click **Create route table**.
 
-![VPC](/images/1.intro/Route.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/Route.png)
 
 1.  Tại trang **Create route table**.
   + Tại mục **Name**, điền **Workshop Publicrtb**.
@@ -72,7 +72,7 @@ Làm tương tự cho **Public subnet** thứ 2, nhưng tại **IPv4 CIRD block*
 2.  Sau khi tạo route table thành công.
   + Click **Edit routes**.
   
-![VPC](/images/1.intro/EditRoute.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/EditRoute.png)
 
 13. Tại trang **Edit routes**.
   + Click **Add route**.
@@ -80,21 +80,21 @@ Làm tương tự cho **Public subnet** thứ 2, nhưng tại **IPv4 CIRD block*
   + Tại mục **Target** chọn **Internet Gateway** sau đó chọn **Workshop IGW**.
   + Click **Save changes**.
 
-![VPC](/images/1.intro/EditRoute1.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/EditRoute1.png)
 
 14. Click tab **Subnet associations**.
   + Click **Edit subnet associations** để tiến hành associate custom routable chúng ta vừa tạo vào **Lab Public Subnet**.
 
 
-![VPC](/images/1.intro/EditAssociations.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/EditAssociations.png)
 
 15. Tại trang **Edit subnet associations**. 
   + Click chọn **workshop Public Subnet**.
   + Click **Save associations**.
 
-![VPC](/images/1.intro/SaveAss.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/SaveAss.png)
 
 16. Kiểm tra thông tin route table đã được associate với **Workshop Public Subnet** và thông tin route đi internet đã được trỏ đến Internet Gateway như hình dưới.
 
 
-![VPC](/images/1.intro/CheckAss.png)
+![VPC](/TrungHieuIT.github.io-workshop/static/images/1.intro/CheckAss.png)
