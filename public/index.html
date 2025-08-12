@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.148.2">
@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Session Management :: AWS System Manager</title>
+    <title>Certificate Management với AWS Certificate Manager :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1754945467" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754945467" rel="stylesheet">
-    <link href="/css/hybrid.css?1754945467" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754945467" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754945467" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754945467" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754945467" rel="stylesheet">
-    <link href="/css/theme.css?1754945467" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754945467" rel="stylesheet">
+    <link href="/css/nucleus.css?1754976729" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754976729" rel="stylesheet">
+    <link href="/css/hybrid.css?1754976729" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754976729" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754976729" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754976729" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754976729" rel="stylesheet">
+    <link href="/css/theme.css?1754976729" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754976729" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754945467" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754976729" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754945467"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754976729"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754945467"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754945467"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754976729"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754976729"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/localhost:1313\/";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754945467"></script>
+<script type="text/javascript" src="/js/search.js?1754976729"></script>
 
     
   </div>
@@ -408,13 +408,13 @@
  
   
     
-    <li data-nav-id="/4-monitoringnotifications/" title="Monitoring &amp; Notifications" class="dd-item 
+    <li data-nav-id="/4-monitoringnotifications/" title="Giám sát &amp; Thông báo" class="dd-item 
         
         
         
         ">
       <a href="/4-monitoringnotifications/">
-           <b> 4. </b> Monitoring &amp; Notifications
+           <b> 4. </b> Giám sát &amp; Thông báo
           
             <i class="fas fa-check read-icon"></i>
           
@@ -434,13 +434,13 @@
  
   
     
-    <li data-nav-id="/6-cleanup/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/5-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
-      <a href="/6-cleanup/">
-          <b>6. </b>Clean up resources
+      <a href="/5-cleanup/">
+          <b>5. </b>Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -489,7 +489,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/" selected>Tiếng Việt</option>
+                      <option id="en" value="/" selected>Tiếng Việt</option>
                     
                   
               
@@ -499,7 +499,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/"></option>
+                      <option id="vi" value="/vi/"></option>
                     
                   
               
@@ -580,19 +580,16 @@
 </span>
 
  
-<h1 id="work-with-amazon-system-manager---session-manager">Work with Amazon System Manager - Session Manager</h1>
-<h3 id="overall">Overall</h3>
-<p>In this lab, you&rsquo;ll learn the basics and practice of Amazon  System Manager - Session Manager
-. Perform creating public and private instance connections.</p>
-<p><img src="/images/arc-log.png" alt="ConnectPrivate"></p>
+<h1 id="certificate-management-với-aws-certificate-manager">Certificate Management với AWS Certificate Manager</h1>
+<h3 id="tổng-quát">Tổng quát</h3>
+<p>Trong đề tài &ldquo;Certificate Management với AWS Certificate Manager&rdquo;, những gì chúng ta đã làm xoay quanh quy trình triển khai, cấu hình và giám sát chứng chỉ SSL/TLS để bảo mật kết nối HTTPS cho website</p>
 <h3 id="content">Content</h3>
 <ol>
-<li><a href="/1-introduce/">Introduction </a></li>
-<li><a href="/2-prerequiste/">Preparation</a></li>
-<li><a href="/3-accessibilitytoinstances/">Connect to EC2 instance</a></li>
-<li><a href="4-s3log/">Manage session logs</a></li>
-<li><a href="5-Portfwd/">Port Forwarding</a></li>
-<li><a href="/6-cleanup/">Clean up resources</a></li>
+<li><a href="/1-introduce/">Giới thiệu</a></li>
+<li><a href="/2-prerequiste/">Chuẩn bị</a></li>
+<li><a href="/3-accessibilitytoinstances/">Triển Khai</a></li>
+<li><a href="/4-monitoringnotifications/">Giám sát và Thông báo</a></li>
+<li><a href="/5-cleanup/">Dọn dẹp tài nguyên</a></li>
 </ol>
 	
   
@@ -857,19 +854,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754945467"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754945467"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754945467"></script>
-    <script src="/js/jquery.sticky.js?1754945467"></script>
-    <script src="/js/featherlight.min.js?1754945467"></script>
-    <script src="/js/highlight.pack.js?1754945467"></script>
+    <script src="/js/clipboard.min.js?1754976729"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754976729"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754976729"></script>
+    <script src="/js/jquery.sticky.js?1754976729"></script>
+    <script src="/js/featherlight.min.js?1754976729"></script>
+    <script src="/js/highlight.pack.js?1754976729"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754945467"></script>
-    <script src="/js/learn.js?1754945467"></script>
-    <script src="/js/hugo-learn.js?1754945467"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754976729"></script>
+    <script src="/js/learn.js?1754976729"></script>
+    <script src="/js/hugo-learn.js?1754976729"></script>
 
-    <link href="/mermaid/mermaid.css?1754945467" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754945467"></script>
+    <link href="/mermaid/mermaid.css?1754976729" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754976729"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

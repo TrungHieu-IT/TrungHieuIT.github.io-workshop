@@ -1,111 +1,111 @@
 [
 {
-	"uri": "//localhost:1313/1-introduce/",
+	"uri": "/",
+	"title": "Certificate Management với AWS Certificate Manager",
+	"tags": [],
+	"description": "",
+	"content": "Certificate Management với AWS Certificate Manager Tổng quát Trong đề tài \u0026ldquo;Certificate Management với AWS Certificate Manager\u0026rdquo;, những gì chúng ta đã làm xoay quanh quy trình triển khai, cấu hình và giám sát chứng chỉ SSL/TLS để bảo mật kết nối HTTPS cho website\nContent Giới thiệu Chuẩn bị Triển Khai Giám sát và Thông báo Dọn dẹp tài nguyên "
+},
+{
+	"uri": "/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "AWS Certificate Manager (ACM) là dịch vụ của Amazon Web Services giúp bạn cung cấp, quản lý và triển khai chứng chỉ số SSL/TLS một cách miễn phí và tự động.\nChứng chỉ SSL/TLS được dùng để mã hóa kết nối giữa người dùng và ứng dụng (HTTPS), bảo vệ dữ liệu khỏi bị nghe lén hoặc giả mạo.\nRoute 53\nAmazon Route 53 là dịch vụ DNS (Domain Name System) được quản lý bởi AWS, cung cấp khả năng phân giải tên miền một cách nhanh chóng, đáng tin cậy và linh hoạt. Route 53 cho phép người dùng định tuyến lưu lượng truy cập đến các máy chủ, ứng dụng hoặc tài nguyên AWS dựa trên nhiều chính sách như địa lý, trọng số và trạng thái sức khỏe của endpoint. Ngoài ra, dịch vụ còn hỗ trợ mua và quản lý tên miền, giúp doanh nghiệp xây dựng hạ tầng mạng toàn cầu với hiệu suất cao và độ sẵn sàng tối ưu.\nMục đích chính\nTạo chứng chỉ SSL/TLS mà không cần phải mua từ nhà cung cấp bên thứ ba. Tự động gia hạn chứng chỉ trước khi hết hạn (tránh downtime). Triển khai nhanh chứng chỉ tới các dịch vụ AWS như: Elastic Load Balancer (ELB / ALB / NLB) Amazon CloudFront Amazon API Gateway AWS App Runner Ưu điểm nổi bật.\nMiễn phí chứng chỉ công khai do ACM cấp. Tự động gia hạn — không cần thao tác thủ công. Tích hợp sẵn với dịch vụ AWS — gắn chứng chỉ chỉ với vài cú click. Hỗ trợ cả chứng chỉ công khai và chứng chỉ nội bộ (private CA). Bảo mật cao, đáp ứng tiêu chuẩn ngành (RSA 2048-bit, ECC). Sơ đồ kiến trúc\n"
 },
 {
-	"uri": "//localhost:1313/",
-	"title": "Session Management",
-	"tags": [],
-	"description": "",
-	"content": "Work with Amazon System Manager - Session Manager Overall In this lab, you\u0026rsquo;ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources "
-},
-{
-	"uri": "//localhost:1313/3-accessibilitytoinstances/3.1-alb/",
+	"uri": "/3-accessibilitytoinstances/3.1-alb/",
 	"title": "Tạo Application Load Balancer (ALB) + Target group",
 	"tags": [],
 	"description": "",
 	"content": " Go to EC2 service management console. Click Load Balancers. Click Create load balancer. Click to Create Application load balancer. Click Save. Tại trang Create Application Load Balancer Tại mục Load balancer name nhập Workshop Tại mục Scheme chọn Internet-facing Tại mục Load balancer IP address type chọn IPv4 Trong phần Network mapping Tại mục VPC chọn VPC vừa tạo tại trong phần chuẩn bị Tại mục Availability Zones and subnets chọn vùng của bạn và chọn 2 Subnet đã tạo trong phần chuẩn bị Trong phần Security groups chọn default Trong phần Listeners and routing Click Create target group Tại trang Specify group details Tại mục Choose a target type chọn Instance Tại mục Target group name nhập Workshop Tại mục IP address type chọn IPv4 Tại mục VPC chọn VPC đã tạo trong phần chuẩn bị. Tại mục Protocol version chọn HTTP1 Trong phần Health checks, tại mục Health check protocol chọn HTTP Click Next Tại trang Register targets Trong phần Available instances chọn Instance đã tạo trong phần chuẩn bị. Click Create target group Tiếp tục trong phần Listeners and routing Tại mục Listener HTTP:80 chọn target group là target group mới tạo Click Add listener Chọn Protocol là HTTPS chọn target group là target group mới tạo "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-createvpc/",
+	"uri": "/2-prerequiste/2.1-createvpc/",
 	"title": "Tạo VPC ",
 	"tags": [],
 	"description": "",
 	"content": "Tạo VPC Lab VPC Truy cập giao diện quản trị dịch vụ VPC Click Your VPC. Click Create VPC. Tại trang Create VPC. Tại mục Name tag điền VPC-workshop. Tại mục IPv4 CIDR điền : 10.10.0.0/16. Click Create VPC. "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/",
+	"uri": "/2-prerequiste/",
 	"title": "Chuẩn bị",
 	"tags": [],
 	"description": "",
 	"content": "Trong bước này, chúng ta sẽ cần tạo một VPC có 2 subnet public . Sau đó tạo 1 EC2 Instance Linux nằm trong public subnet.\nĐể tìm hiểu cách tạo các EC2 instance và VPC với public/private subnet các bạn có thể tham khảo bài lab :\nGiới thiệu về Amazon EC2 Làm việc với Amazon VPC Nội dung Tạo VPC Tạo Public subnet Tạo máy chủ EC2 Đăng ký domains với Route 53 "
 },
 {
-	"uri": "//localhost:1313/3-accessibilitytoinstances/3.2-requestcertificate/",
+	"uri": "/3-accessibilitytoinstances/3.2-requestcertificate/",
 	"title": "Request certificate",
 	"tags": [],
 	"description": "",
 	"content": "Truy cập giao diện quản trị dịch vụ AWS Certificate Manager (ACM)\nClick Request Click Next Tại trang Request public certificate Tại mục Fully qualified domain name nhập domains mà bạn đã đăng ký với Route 53 Click Request\nTrong trang bạn được chuyển tới, đợi cho status đổi thành Issued\nClick copy CNAME name\nTới trang dịch vụ Route 53 Click Hosted Zone Click vào domains đã tạo trong phần chuẩn bị Click Create Record Tại trang Create record Tại mục Record name nhập domains mà bạn đã tạo Tại mục Record type chọn CNAME Tại mục Value dán phần CNAME name đã copy từ trước vào Click Create Record "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.2-createpublicsubnet/",
+	"uri": "/2-prerequiste/2.2-createpublicsubnet/",
 	"title": "Tạo 2 Public subnet và Internet Getway",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Public subnet Click Subnets. Click Create subnet. Tại trang Create subnet. Tại mục VPC ID click chọn VPC-workshop. Tại mục Subnet name điền workshop Public Subnet. Tại mục Availability Zone chọn Availability zone đầu tiên. Tại mục IPv4 CIRD block điền 10.0.3.0/24. Kéo xuống cuối trang , click Create subnet.\nClick chọn workshop Public Subnet.\nClick Actions. Click Edit subnet settings. Click chọn Enable auto-assign public IPv4 address. Click Save. Làm tương tự cho Public subnet thứ 2, nhưng tại IPv4 CIRD block điền 10.0.4.0/24\nClick Internet Gateways. Click Create internet gateway. Tại trang Create internet gateway. Tại mục Name tag điền Workshop IGW. Click Create internet gateway. Sau khi tạo thành công, click Actions. Click Attach to VPC. Tại trang Attach to VPC. Tại mục Available VPCs chọn VPC-workshop. Click Attach internet gateway. Kiểm tra quá trình attach thành công Tiếp theo chúng ta sẽ tạo một custom route table để gán vào workshop Public Subnet. Click Route Tables. Click Create route table. Tại trang Create route table. Tại mục Name, điền Workshop Publicrtb. Tại mục VPC, chọn VPC-workshop. Click Create route table. Sau khi tạo route table thành công. Click Edit routes. Tại trang Edit routes. Click Add route. Tại mục Destination điền 0.0.0.0/0 Tại mục Target chọn Internet Gateway sau đó chọn Workshop IGW. Click Save changes. Click tab Subnet associations. Click Edit subnet associations để tiến hành associate custom routable chúng ta vừa tạo vào Lab Public Subnet. Tại trang Edit subnet associations. Click chọn workshop Public Subnet. Click Save associations. Kiểm tra thông tin route table đã được associate với Workshop Public Subnet và thông tin route đi internet đã được trỏ đến Internet Gateway như hình dưới. "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.3-createec2linux/",
+	"uri": "/2-prerequiste/2.3-createec2linux/",
 	"title": "Tạo Public Linux EC2",
 	"tags": [],
 	"description": "",
 	"content": " Truy cập giao diện quản trị dịch vụ EC2 Click Instances. Click Launch instances. Tại trang Launch an instance. Nhập Name: WorkshopEC2 Trong phần Quick Start chọn Amazon Linux Click Select để lựa chọn AMI Amazon Linux 2023 kernel 6.1. Tiếp theo Click chọn Instance type t2.micro. Click Create new Key pair. Tại cửa sổ Create key pair Tại mục Key pair name nhập: MyWS. Tại mục Key pair type chọn RSA. Tại mục Private key file format chọn .pem Click Create key pair. Trong phần Key pair chọn key vừa tạo Trong phần Network settings.\nChọn Allow HTTPS traffic from the internetp. Chọn Allow HTTP traffic from the internet. Click Lauch Instance. Trong tab Instances chọn Instance vừa tạo\nĐợi cho status check chuyển thành 2/2 passed Click Connect Chuyển tới tab Connect thì tiếp tục click Connect Sau đó sẽ hiện ra 1 tab như trong ảnh dưới yum update -y\ryum install -y httpd\rsystemctl enable httpd\rsystemctl start httpd\recho \u0026quot;\u0026lt;h1\u0026gt;Hello HTTPS from EC2\u0026lt;/h1\u0026gt;\u0026quot; \u0026gt; /var/www/html/index.html\rCopy dòng lệnh trên và dán vào màn hình tương tác sẽ tạo ra 1 file hmtl đơn giản để chúng ta test Tiếp theo chúng ta sẽ thực hiện tương tự để tạo 1 EC2 Instance Windows chạy trong Private subnet.\n"
 },
 {
-	"uri": "//localhost:1313/3-accessibilitytoinstances/3.3-createrecordaalias/",
+	"uri": "/3-accessibilitytoinstances/3.3-createrecordaalias/",
 	"title": "Tạo record A (Alias)",
 	"tags": [],
 	"description": "",
 	"content": "Trong phần này, chúng ta sẽ tạo Record A (Alias) cho domains\nTruy cập Giao diện dịch vụ Route 53 Click Hosted Zone Click vào domains đã tạo trong phần chuẩn bị Click Create Record Tại trang Create Record\nTại mục Record name nhập domains mà bạn đã tạo Tại mục Record type chọn A Tại mục Route traffic to chọn lần lượt: Alias to Application and Classic Load Balancer Chọn AZ hiện tại của bạn Chọn Load balancer đã tạo Click Create records "
 },
 {
-	"uri": "//localhost:1313/3-accessibilitytoinstances/",
+	"uri": "/3-accessibilitytoinstances/",
 	"title": "Triển Khai",
 	"tags": [],
 	"description": "",
-	"content": "Trong bước này, chúng ta sẽ tạo Application Load Balancer (ALB) + Target group, Request certificate với AWS Certificate Manager\nContent 3.1. Tạo Application Load Balancer (ALB) + Target group 3.2. Request certificate 3.3. Tạo record A (Alias) 3.4. Gán certificate vào ALB (HTTPS listener)\n"
+	"content": "Trong bước này, chúng ta sẽ tạo Application Load Balancer (ALB) + Target group, Request certificate với AWS Certificate Manager\nContent 3.1. Tạo Application Load Balancer (ALB) + Target group 3.2. Request certificate 3.3. Tạo record A (Alias) 3.4. Gán certificate vào ALB (HTTPS listener) "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.4-registerdomains/",
+	"uri": "/2-prerequiste/2.4-registerdomains/",
 	"title": "Đăng ký tên miền với Route 53",
 	"tags": [],
 	"description": "",
 	"content": " Truy cập Giao diện dịch vụ Route 53 Click Registered domains. Click Register domains. Tại trang Register domains. Tại mục Check availability for a domain nhập tên domains mà bạn muốn. Click Search. Tại Search result, nếu domains bạn nhập chưa có ai đăng ký thì sẽ hiển thị Exact match và bạn có thể tham khảo giá domains ở bên cạnh, hoặc xem các đề xuất ở bên dưới. Sau khi chọn, click Select Click Proceed to checkout Tại mục Pricing, kiểm tra lại tên domain + giá, click Next Tại mục Contact information, nhập thông tin liên lạc của bản thân và click Next Tại mục Review and submit, kiểm tra kĩ lại các thông tin quan trọng Click Submit Sau khi Submit, khoảng 10~15phút sau Amazon sẽ gửi cho bạn email xác nhận đăng kí domains, kiểu như hình dưới đây. Vậy là bạn đã đăng ký domain thành công với Route 53. Tiếp theo, tạo Hosted Zone Chọn Hosted Zone trong giao diện dịch vụ Route 53 Click Create Hosted Zone Tại trang Create hosted zone, tại mục Domain name nhập tên domain của bạn. Click Create hosted zone Hoàn thành các bước chuẩn bị với Route 53\n"
 },
 {
-	"uri": "//localhost:1313/3-accessibilitytoinstances/3.4-certificatetoalb/",
+	"uri": "/3-accessibilitytoinstances/3.4-certificatetoalb/",
 	"title": "Gán certificate vào ALB (HTTPS listener)",
 	"tags": [],
 	"description": "",
 	"content": " Truy cập giao diện quản trị dịch vụ EC2 Click Load balancer Chọn Load balancer đã tạo từ trước. Trong trang được chuyển tới Chọn tab Listeners and rules Click HTTPS:443 Chọn tab Certificates Click Add certificate Chọn hết các Certificate Click Include as pending below Click Add pending certificates "
 },
 {
-	"uri": "//localhost:1313/4-monitoringnotifications/",
-	"title": "Monitoring &amp; Notifications",
+	"uri": "/4-monitoringnotifications/",
+	"title": "Giám sát &amp; Thông báo",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Vào AWS Console → AWS Config Nhấn “Get started” nếu chưa cấu hình Chọn: Resources to record → Record all resources supported in this region Amazon S3 bucket → tạo mới hoặc chọn sẵn (dùng để lưu log) IAM Role → cho phép tạo mới role AWSConfigRole Nhấn Confirm Trong AWS Config, vào tab Rules Click Add rule Tại trang Specify rule type Tìm rule có tên: acm-certificate-expiration-check Click Next Cấu hình: Scope of changes: All changes Maximum days before expiration: 14 Click Next Click Save\nTiếp theo, tạo Simple Notification Service (SNS) để nhận thông báo\nTại giao diện trang chủ của SNS, nhập tên topic: SSLExpirationAlerts\nClick Next step\nTại trang Create topic Chọn Standard Click Create topic Tại trang được chuyển tới, click Create subscription Tại trang Details Tại mục Protocol chọn Email Tại mục Endpoint nhập Email của bạn Click Create subscription Bạn sẽ nhận được một email xác nhận → Check mail \u0026amp; Confirm "
 },
 {
-	"uri": "//localhost:1313/6-cleanup/",
-	"title": "Clean up resources",
+	"uri": "/5-cleanup/",
+	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
-	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete EC2 instance Go to EC2 service management console\nClick Instances. Select both Public Linux Instance and Private Windows Instance instances. Click Instance state. Click Terminate instance, then click Terminate to confirm. Go to IAM service management console\nClick Roles. In the search box, enter SSM. Click to select SSM-Role. Click Delete, then enter the role name SSM-Role and click Delete to delete the role. Click Users. Click on user Portfwd. Click Delete, then enter the user name Portfwd and click Delete to delete the user. Delete S3 bucket Access System Manager - Session Manager service management console.\nClick the Preferences tab. Click Edit. Scroll down. In the section S3 logging. Uncheck Enable to disable logging. Scroll down. Click Save. Go to S3 service management console\nClick on the S3 bucket we created for this lab. (Example: lab-fcj-bucket-0001 ) Click Empty. Enter permanently delete, then click Empty to proceed to delete the object in the bucket. Click Exit. After deleting all objects in the bucket, click Delete\nEnter the name of the S3 bucket, then click Delete bucket to proceed with deleting the S3 bucket. Delete VPC Endpoints Go to VPC service management console Click Endpoints. Select the 4 endpoints we created for the lab including SSM, SSMMESSAGES, EC2MESSAGES, S3GW. Click Actions. Click Delete VPC endpoints. In the confirm box, enter delete.\nClick Delete to proceed with deleting endpoints. Click the refresh icon, check that all endpoints have been deleted before proceeding to the next step.\nDelete VPC Go to VPC service management console\nClick Your VPCs. Click on Lab VPC. Click Actions. Click Delete VPC. In the confirm box, enter delete to confirm, click Delete to delete Lab VPC and related resources.\n"
+	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete EC2 instance Go to EC2 service management console Click Instances. Chọn Workshop instances. Click Instance state. Click Terminate instance, rồi click Terminate để xác nhận. Delete VPC Go to VPC service management console\nClick Your VPCs. Click on Lab VPC. Click Actions. Click Delete VPC. In the confirm box, enter delete to confirm, click Delete to delete Lab VPC and related resources.\n"
 },
 {
-	"uri": "//localhost:1313/categories/",
+	"uri": "/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/tags/",
+	"uri": "/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
