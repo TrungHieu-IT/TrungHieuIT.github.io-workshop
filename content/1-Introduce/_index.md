@@ -30,4 +30,4 @@ Amazon Route 53 là dịch vụ DNS (Domain Name System) được quản lý b�
 
 **Sơ đồ kiến trúc**
 
-![Sodo](TrungHieuIT.github.io-workshop/static/images/1.intro/Sodo1.png)
+![Sodo](Sodo1.png)
